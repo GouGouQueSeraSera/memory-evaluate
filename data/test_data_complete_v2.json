@@ -1,0 +1,226 @@
+[
+  {
+    "itemId": "test_item_001",
+    "itemName": "用例1",
+    "qa": [
+      {
+        "question": "我的名字叫什么",
+        "answer": "用户的名字叫郑淳元",
+        "evidence": {
+          "session_001": [
+            {
+              "messageIds": ["msg_001"],
+              "memoryIds": ["mem_001"]
+            }
+          ]
+        }
+      },
+      {
+        "question": "我有什么爱好",
+        "answer": "用户喜欢打篮球",
+        "evidence": {
+          "session_001": [
+            {
+              "messageIds": ["msg_003"],
+              "memoryIds": ["mem_002"]
+            }
+          ]
+        }
+      }
+    ],
+    "sessions": [
+      {
+        "sessionId": "session_001",
+        "memories": [
+          {
+            "memoryId": "mem_001",
+            "content": "用户叫郑淳元",
+            "metaData": {}
+          },
+          {
+            "memoryId": "mem_002",
+            "content": "用户喜欢打篮球",
+            "metaData": {}
+          }
+        ],
+        "conversation": [
+          {
+            "messageId": "msg_001",
+            "role": "user",
+            "content": "你好我叫郑淳元",
+            "chatTime": "2025-08-10 10:00:00"
+          },
+          {
+            "messageId": "msg_002",
+            "role": "assistant",
+            "content": "好的我记住了你叫郑淳元",
+            "chatTime": "2025-08-10 10:01:00"
+          },
+          {
+            "messageId": "msg_003",
+            "role": "user",
+            "content": "我很喜欢打篮球",
+            "chatTime": "2025-08-10 10:02:00"
+          },
+          {
+            "messageId": "msg_004",
+            "role": "assistant",
+            "content": "好的我记住了你喜欢打篮球",
+            "chatTime": "2025-08-10 10:03:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "itemId": "test_item_002",
+    "itemName": "用例2",
+    "qa": [
+      {
+        "question": "我住在哪里",
+        "answer": "用户住在北京",
+        "evidence": {
+          "session_002": [
+            {
+              "messageIds": ["msg_005"],
+              "memoryIds": ["mem_003"]
+            }
+          ]
+        }
+      },
+      {
+        "question": "我在哪里工作",
+        "answer": "用户在互联网公司工作",
+        "evidence": {
+          "session_002": [
+            {
+              "messageIds": ["msg_007"],
+              "memoryIds": ["mem_004"]
+            }
+          ]
+        }
+      }
+    ],
+    "sessions": [
+      {
+        "sessionId": "session_002",
+        "memories": [
+          {
+            "memoryId": "mem_003",
+            "content": "用户住在北京",
+            "metaData": {}
+          },
+          {
+            "memoryId": "mem_004",
+            "content": "用户在互联网公司工作",
+            "metaData": {}
+          }
+        ],
+        "conversation": [
+          {
+            "messageId": "msg_005",
+            "role": "user",
+            "content": "我住在北京朝阳区",
+            "chatTime": "2025-08-10 11:00:00"
+          },
+          {
+            "messageId": "msg_006",
+            "role": "assistant",
+            "content": "好的，我记住了你住在北京",
+            "chatTime": "2025-08-10 11:01:00"
+          },
+          {
+            "messageId": "msg_007",
+            "role": "user",
+            "content": "我在一家互联网公司工作",
+            "chatTime": "2025-08-10 11:02:00"
+          },
+          {
+            "messageId": "msg_008",
+            "role": "assistant",
+            "content": "明白了，你在互联网公司工作",
+            "chatTime": "2025-08-10 11:03:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "itemId": "test_item_003",
+    "itemName": "用例3",
+    "qa": [
+      {
+        "question": "我的个人信息",
+        "answer": "用户叫张三，今年28岁，是软件工程师",
+        "evidence": {
+          "session_003": [
+            {
+              "messageIds": ["msg_009", "msg_011", "msg_013"],
+              "memoryIds": ["mem_005", "mem_006", "mem_007"]
+            }
+          ]
+        }
+      }
+    ],
+    "sessions": [
+      {
+        "sessionId": "session_003",
+        "memories": [
+          {
+            "memoryId": "mem_005",
+            "content": "用户叫张三",
+            "metaData": {}
+          },
+          {
+            "memoryId": "mem_006",
+            "content": "用户今年28岁",
+            "metaData": {}
+          },
+          {
+            "memoryId": "mem_007",
+            "content": "用户是软件工程师",
+            "metaData": {}
+          }
+        ],
+        "conversation": [
+          {
+            "messageId": "msg_009",
+            "role": "user",
+            "content": "我叫张三",
+            "chatTime": "2025-08-10 12:00:00"
+          },
+          {
+            "messageId": "msg_010",
+            "role": "assistant",
+            "content": "你好张三",
+            "chatTime": "2025-08-10 12:01:00"
+          },
+          {
+            "messageId": "msg_011",
+            "role": "user",
+            "content": "我今年28岁了",
+            "chatTime": "2025-08-10 12:02:00"
+          },
+          {
+            "messageId": "msg_012",
+            "role": "assistant",
+            "content": "知道了，你28岁",
+            "chatTime": "2025-08-10 12:03:00"
+          },
+          {
+            "messageId": "msg_013",
+            "role": "user",
+            "content": "我的职业是软件工程师",
+            "chatTime": "2025-08-10 12:04:00"
+          },
+          {
+            "messageId": "msg_014",
+            "role": "assistant",
+            "content": "明白，你是软件工程师",
+            "chatTime": "2025-08-10 12:05:00"
+          }
+        ]
+      }
+    ]
+  }
+]
